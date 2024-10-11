@@ -3,13 +3,32 @@
   <head>
     <title>Praphulla Chandra Link-in-Bio</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
     <style>
-      * {
+/*      * {
         border: 1px red dashed
       }
+*/
+      a {
+        color: rgba(0, 0, 0, 1.0);
+        text-decoration: none;
+      }
+      html {
+        min-height: 100%;
+      }
       body {
+        min-height: 100%;
         padding-top: 40px;
         padding-bottom: 40px;
+        font-family: 'Cabin', sans-serif;
+        font-size: 16px;
+        background: linear-gradient(180deg, #6e6a9e, #6d6a9e, #6d729f, #748ca1, #82a598, #a2ac95, #b1aba1, #b4aaa7, #b5aaaa, #b5aaaa);
+      }
+      .main-container {
+        max-width: 640px;
+        margin: auto;
       }
       .avatar-img {
         width: 200px;
@@ -28,16 +47,47 @@
         height: 50px;
         object-fit: cover;
       }
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 30px;
+      }
+      .social-icons-row {
+        max-width: 400px;
+        margin: auto;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .links-row {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+      .subtitle {
+        margin-bottom: 10px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 18px;
+      }
+      .link-text {
+        margin-left: 20px;
+      }
 
     </style>
   </head>
   <body>
     <div class="main-container">
       <div class="image-row">
-        <img class="avatar-img" src="/images/PraphullaPhoto.JPG" alt="Praphulla Chandra Headshot">
+        <img class="avatar-img" src="/images/PraphullaPhoto.png" alt="Praphulla Chandra Headshot">
       </div>
       <div class="name-row">
-        <h1>Praphulla Chandra</h1>
+        Praphulla Chandra
       </div>
       <div class="social-icons-row">
         <a href="https://github.com/chandrpr" target="_blank">
@@ -54,22 +104,22 @@
         </a>
       </div>
       <div class="links-block">
-        <h3>Book Recommendations</h3>
+        <div class="subtitle">Book Recommendations:</div>
         <div class="links-row">
-          <img class="link-img" src="/images/Follett_Kingsbridge.jpg" alt="Ken Follett Kingsbridge Books Image">
-          <a href="https://www.amazon.com/Ken-Follett-Kingsbridge-Books-collection/dp/B0CJRQ5WGF" target="_blank">
+          <img class="link-img" src="/images/Follett_Kingsbridge.png" alt="Ken Follett Kingsbridge Books Image">
+          <a class="link-text" href="https://www.amazon.com/Ken-Follett-Kingsbridge-Books-collection/dp/B0CJRQ5WGF" target="_blank">
             Ken Follett: Kingsbridge series
           </a>
         </div>
         <div class="links-row">
-          <img class="link-img" src="/images/Tolkien_LoTRHobbit.jpg" alt="JRR Tolkien LOTR and Hobbit Books Image">
-          <a href="https://www.amazon.com/J-R-R-Tolkien-4-Book-Boxed-Set/dp/0345538374" target="_blank">
-            JRR Tolkien: There and Back Again (by Bilbo Baggins) and the Lord of the Rings (by Frodo Baggins)
+          <img class="link-img" src="/images/Tolkien_LoTRHobbit.png" alt="JRR Tolkien LOTR and Hobbit Books Image">
+          <a class="link-text" href="https://www.amazon.com/J-R-R-Tolkien-4-Book-Boxed-Set/dp/0345538374" target="_blank">
+            JRR Tolkien: The Hobbit and Lord of the Rings
           </a>
         </div>
         <div class="links-row">
-          <img class="link-img" src="/images/Martin_SongOfIceAndFire.jpg" alt="GRR Martin Song of Ice and Fire Books Image">
-          <a href="https://www.amazon.com/George-Martins-Thrones-5-Book-Boxed/dp/0345535529" target="_blank">
+          <img class="link-img" src="/images/Martin_SongOfIceAndFire.png" alt="GRR Martin Song of Ice and Fire Books Image">
+          <a class="link-text" href="https://www.amazon.com/George-Martins-Thrones-5-Book-Boxed/dp/0345535529" target="_blank">
             George RR Martin: A Song of Ice and Fire
           </a>
         </div>
